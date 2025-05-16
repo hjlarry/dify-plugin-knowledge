@@ -1,0 +1,33 @@
+version: 0.0.1
+type: plugin
+author: hjlarry
+name: knowledge
+label:
+  en_US: knowledge
+  ja_JP: knowledge
+  zh_Hans: knowledge
+  pt_BR: knowledge
+description:
+  en_US: Add the content produced by dify's workflow to its knowledge base
+  ja_JP: Add the content produced by dify's workflow to its knowledge base
+  zh_Hans: Add the content produced by dify's workflow to its knowledge base
+  pt_BR: Add the content produced by dify's workflow to its knowledge base
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission: {}
+plugins:
+  tools:
+    - provider/knowledge.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-05-15T14:48:25.165986168+08:00
+privacy: PRIVACY.md
+verified: false
