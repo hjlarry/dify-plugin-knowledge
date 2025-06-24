@@ -42,19 +42,28 @@ When your `CHUNK METHOD` is `Parent-child`, the `PROCESS RULE` should be like th
 ```json
 {
   "mode": "hierarchical",
-  "rules":{
-    "pre_processing_rules": [{"id":"remove_extra_spaces", "enabled": true}, {"id":"remove_urls_emails", "enabled": true}],
+  "rules": {
+    "pre_processing_rules": [
+      {
+        "id": "remove_extra_spaces",
+        "enabled": true
+      },
+      {
+        "id": "remove_urls_emails",
+        "enabled": true
+      }
+    ],
     "segmentation": {
       "separator": "\n\n",
       "max_tokens": 1024,
       "chunk_overlap": 50
-    }
-  },
-  "parent_mode": "full-doc",
-  "subchunk_segmentation": {
+    },
+    "parent_mode": "full-doc",
+    "subchunk_segmentation": {
       "separator": "\n\n",
       "max_tokens": 1024,
       "chunk_overlap": 50
+    }
   }
 }
 ```
