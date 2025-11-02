@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: hjlarry
 name: knowledge
@@ -9,9 +9,9 @@ label:
   pt_BR: knowledge
 description:
   en_US: Add the content produced by dify's workflow to its knowledge base
-  ja_JP: Add the content produced by dify's workflow to its knowledge base
-  zh_Hans: Add the content produced by dify's workflow to its knowledge base
-  pt_BR: Add the content produced by dify's workflow to its knowledge base
+  ja_JP: Dify のワークフローで生成されたコンテンツをナレッジベースに追加します
+  zh_Hans: 将 Dify 的工作流生成的内容添加到其知识库
+  pt_BR: Adicione o conteúdo produzido pelo fluxo de trabalho do Dify à sua base de conhecimento
 icon: icon.svg
 resource:
   memory: 268435456
